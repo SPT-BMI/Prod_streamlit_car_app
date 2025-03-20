@@ -27,7 +27,7 @@ col1, col2 = st.columns(2)
 Top_speed= col1.number_input("Power (0-100)", min_value=0, max_value = 100)
 Acceleration = col1.number_input("Acceleration (0-100) " , min_value=0, max_value = 100)
 Handling = col2.number_input("Handling (0-100) ", min_value=0, max_value = 100)
-Weight =  col2.number_input("Weight", min_value=1000, value=1500, max_value=5000)
+Weight =  col2.number_input("Weight", min_value=1000, value=1500, max_value=6000)
 #st.slider("How", min_value=1, value=1, max_value=10)
 Car_score = Top_speed + Acceleration + Handling
 avg_car_score = Car_score/3
