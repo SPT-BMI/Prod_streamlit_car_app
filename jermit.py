@@ -69,6 +69,6 @@ if selected is not None:
 st.header("Your Car Comparsion")
 y = zerotosixty
 if y <2.5:
-    st.write("Ferrari")
+    st.write("Ferrari - You have a thing for speed huh?")
 else:
-    st.write("PT Cruiser")
+    st.write("PT Cruiser - Well maybe you won't get there soon but you'll get there")
