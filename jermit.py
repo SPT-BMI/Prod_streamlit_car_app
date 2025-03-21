@@ -13,9 +13,9 @@ font="sans serif"
 
 st.title('Jermit Gunning: Designing the perfect car Python App')
 st.header("Fill in the attributes to make your perfect car")
-x = st.text_input('First hoose your Car name')
+x = st.text_input('First choose your Car name')
 #df = pd.read_csv("Streamlit sa.csv")
-st.header(f"{x}: Now that you have a name lets choose a powertrain")
+st.header(f"{x} Now that you have a name lets choose a powertrain")
 col1,col2,col3 = st.columns(3)
 button = col1.checkbox('Naturally Aspirated V12')
 button1 = col2.checkbox('Hybrid Turbo V6')
@@ -27,7 +27,7 @@ col1, col2 = st.columns(2)
 Top_speed= col1.number_input("Power (0-100)", min_value=0, max_value = 100)
 Acceleration = col1.number_input("Acceleration (0-100) " , min_value=0, max_value = 100)
 Handling = col2.number_input("Handling (0-100) ", min_value=0, max_value = 100)
-Weight =  col2.number_input("Weight", min_value=1000, value=1500, max_value=6000)
+Weight =  col2.number_input("Weight", min_value=1000, value=1500, max_value=5000)
 #st.slider("How", min_value=1, value=1, max_value=10)
 Car_score = Top_speed + Acceleration + Handling
 avg_car_score = Car_score/3
