@@ -20,27 +20,26 @@ link1 = col2.link_button("Portfolio", "https://sites.google.com/view/jermitgunni
 link3 = col3.link_button("Other Apps", "https://share.streamlit.io/user/spt-bmi")
 x = st.text_input('First choose your Car name')
 #df = pd.read_csv("Streamlit sa.csv")
-st.header(f"{x} Now that you have a name lets choose a powertrain")
+st.header(f"{x} Now that you have a name let's choose a powertrain")
 col1,col2,col3 = st.columns(3)
 button = col1.checkbox('Naturally Aspirated V12')
 button1 = col2.checkbox('Hybrid Turbo V6')
 button2 = col3.checkbox('Triple Electric Motors')
 y = button
-st.header("Okay now lets pic some attributes for your car")
+st.header("Okay now let's pic some attributes for your car")
 ###Columns
 col1, col2 = st.columns(2)
 Top_speed= col1.number_input("Power (0-100)", min_value=0, max_value = 100)
 Acceleration = col1.number_input("Acceleration (0-100) " , min_value=0, max_value = 100)
 Handling = col2.number_input("Handling (0-100) ", min_value=0, max_value = 100)
-Weight =  col2.number_input("Weight", min_value=1000, value=1500, max_value=5000)
+Weight =  col2.number_input("Weight", min_value=2000, value=2000, max_value=5000)
 #st.slider("How", min_value=1, value=1, max_value=10)
 Car_score = Top_speed + Acceleration + Handling
 avg_car_score = Car_score/3
 reliability = range(10)
 #Quarter_Mile = (((Weight /10) - 50)/ 2) + (avg_car_score -50)
 Quarter_mile = Weight/50 + (Top_speed)
-zerotosixty =  ((((Acceleration * 100) + Weight) /1000) * .75) / 4
-
+zerotosixty =  ((((Weight) /1000) * 2)) - (Acceleration/55)
 
 #st.header('Car scoring')
 #col1 = st.columns(1)
@@ -61,8 +60,15 @@ selected = st.feedback("thumbs")
 if selected is not None:
     st.markdown(f"You selected: {sentiment_mapping[selected]}")
 
-#st.image("IMG_7128.jpg")
+#st.image("DSC00008.JPG")
 #st.checkbox("label")
 
 #data = pd.read_csv("Streamlit sa.csv")
 #st.write(data)
+
+st.header("Your Car Comparsion")
+y = zerotosixty
+if y <2.5:
+    st.write("Ferrari")
+else:
+    st.write("PT Cruiser")
