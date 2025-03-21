@@ -61,7 +61,7 @@ selected = st.feedback("thumbs")
 if selected is not None:
     st.markdown(f"You selected: {sentiment_mapping[selected]}")
 
-st.image("IMG_7128.jpg")
+#st.image("IMG_7128.jpg")
 #st.checkbox("label")
 
 #data = pd.read_csv("Streamlit sa.csv")
