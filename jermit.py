@@ -12,12 +12,16 @@ font="sans serif"
 
 
 st.title('Jermit Gunning: Car Attributes Python App')
+st.sidebar.header("Welcome to my App")
 st.header("First you can reach me here:")
 col1, col2, col3 = st.columns(3)
+
 
 link = col1.link_button("LinkedIn", "https://www.linkedin.com/in/jermit-gunning-779a81172/")
 link1 = col2.link_button("Portfolio", "https://sites.google.com/view/jermitgunning/home")
 link3 = col3.link_button("Other Apps", "https://share.streamlit.io/user/spt-bmi")
+st.header("Instructions")
+st.write("Fill out the attributes below to build your car and get an IRL comparison")
 x = st.text_input('First choose your Car name')
 #df = pd.read_csv("Streamlit sa.csv")
 st.header(f"{x} Now that you have a name let's choose a powertrain")
@@ -46,6 +50,14 @@ zerotosixty =  ((((Weight) /1000) * 2)) - (Acceleration/55)
 #Avg_score = col1.car_score
 #st.write(avg_car_score)
 #st.write(reliability)
+
+
+#x = st.text_input('First choose your Car name')
+
+#speed = st.text_input("Okay now let's pic some attributes for your car")
+
+
+#st.bar_chart(speed)
 
 col1, col2,col3 = st.columns(3)
 col1.metric(label="Overall Rating", value=f"{avg_car_score:,.2F}")
