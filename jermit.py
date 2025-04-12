@@ -91,7 +91,7 @@ with tab2:
     st.header('In this tab we are you can input a word and see how many characters it has')
 
 
-       xx = st.text_input('Put in word here')
+    xx = st.text_input('Put in word here')
     
 with tab2: 
     def badmon_function(xx):
