@@ -88,4 +88,16 @@ else:
     st.write("PT Cruiser - Well maybe you won't get there soon but you'll get there")
 
 with tab2:
+    st.header('In this tab we are you can input a word and see how many characters it has')
+
+
+       xx = st.text_input('Put in word here')
+    
+with tab2: 
+    def badmon_function(xx):
+        st.write('This sentence has', len(xx), 'characters' )
+
+with tab2:
+    st.subheader(badmon_function(xx))
+
     
