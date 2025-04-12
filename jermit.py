@@ -86,3 +86,6 @@ if y <2.5:
     st.write("Ferrari - You have a thing for speed huh?")
 else:
     st.write("PT Cruiser - Well maybe you won't get there soon but you'll get there")
+
+with tab2:
+    
