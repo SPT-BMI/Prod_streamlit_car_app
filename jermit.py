@@ -82,10 +82,11 @@ if selected is not None:
 with tab1:
     st.header("Your Car Comparsion")
     y = zerotosixty
-if y <2.5:
-    st.write("Ferrari - You have a thing for speed huh?")
-else:
-    st.write("PT Cruiser - Well maybe you won't get there soon but you'll get there")
+with tab1:
+    if y <2.5:
+        st.write("Ferrari - You have a thing for speed huh?")
+    else:
+        st.write("PT Cruiser - Well maybe you won't get there soon but you'll get there")
 
 with tab2:
     st.header('In this tab we are you can input a word and see how many characters it has')
