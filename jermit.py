@@ -10,7 +10,7 @@ secondaryBackgroundColor="#F0F2F6"
 textColor="#31333F"
 font="sans serif"
 
-tab1,tab2 = st.tabs(["Car Customizer", "Word Finder"])
+tab1,tab2 = st.tabs(["Car Customizer", "Word Finder(In DEV)"])
 
 with tab1:
     st.title('Jermit Gunning: Car Attributes Python App')
